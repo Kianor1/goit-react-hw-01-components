@@ -11,3 +11,35 @@
   border-radius: 50%;
   background-color: #fff;
 }
+
+.description {
+  padding: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.tag {
+  font-style: italic;
+}
+
+.location {
+  font-size: 24px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style: none;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity {
+  font-size: 28px;
+}
