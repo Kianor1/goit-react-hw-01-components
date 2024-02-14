@@ -13,8 +13,11 @@ const TransactionHistory = () => {
         </tr>
       </thead>
       <tbody>
-        {transactions.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
+        {transactions.map(({ id, type, amount, currency }, index) => (
+          <tr
+            key={id}
+            style={{ backgroundColor: index % 2 === 0 ? '#94eaff' : '#3effc5' }}
+          >
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>

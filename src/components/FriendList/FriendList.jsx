@@ -11,8 +11,8 @@ const FriendList = () => {
             className={s.status}
             style={{ backgroundColor: isOnline ? 'green' : 'red' }}
           ></span>
-          <img src={avatar} alt="avatar" />
-          <p>{name}</p>
+          <img className={s.avatar} src={avatar} alt="avatar" />
+          <p className={s.name}>{name}</p>
         </li>
       ))}
     </ul>

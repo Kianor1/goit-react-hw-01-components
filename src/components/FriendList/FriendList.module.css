@@ -1,0 +1,36 @@
+.friend_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list_item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #000000;
+  background-color: #00b7ff;
+  padding-left: 15px;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.name {
+  font: 1em sans-serif;
+  font-style: italic;
+  color: #fff;
+  padding: 0 20px;
+}
