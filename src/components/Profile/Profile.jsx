@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Profile.module.css';
 import user from '../assets/user.json';
 
-const Profile = ({ data }) => {
+const Profile = () => {
   const { avatar, username, location, tag, stats } = user;
   return (
     <div className={s.profileItem}>

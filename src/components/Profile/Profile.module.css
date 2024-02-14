@@ -1,6 +1,7 @@
 .profileItem {
+  margin-top: 30px;
   background-color: #23828f;
-  width: 30%;
+  width: 650px;
   justify-content: center;
   text-align: center;
   padding: 15px 10px;
