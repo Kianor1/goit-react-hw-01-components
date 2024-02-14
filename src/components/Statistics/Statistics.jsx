@@ -10,7 +10,6 @@ const randomColor = () => {
   }
   return color;
 };
-
 const Statistics = () => {
   return (
     <section className={s.statistics}>
