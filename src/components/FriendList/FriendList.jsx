@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './FriendList.module.css';
-import friends from '../assets/friends.json';
-const FriendList = () => {
+
+const FriendList = ({ friendItem }) => {
   return (
     <ul className={s.friend_list}>
-      {friends.map(({ id, avatar, name, isOnline }) => (
+      {friendItem.map(({ id, avatar, name, isOnline }) => (
         <li key={id} className={s.list_item}>
           <span
             className={s.status}

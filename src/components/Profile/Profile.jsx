@@ -1,8 +1,7 @@
 import React from 'react';
 import s from './Profile.module.css';
-import user from '../assets/user.json';
-const Profile = () => {
-  const { avatar, username, location, tag, stats } = user;
+
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={s.profileItem}>
       <div className={s.description}>

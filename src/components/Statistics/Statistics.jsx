@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Statistics.module.css';
-import data from '../assets/data.json';
 
 const randomColor = () => {
   const letters = '0123456789ABCDEF';
@@ -10,12 +9,12 @@ const randomColor = () => {
   }
   return color;
 };
-const Statistics = () => {
+const Statistics = ({ title, stats }) => {
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>Upload stats</h2>
+      <h2 className={s.title}>{title}</h2>
       <ul className={s.stat_list}>
-        {data.map(({ id, label, percentage }) => (
+        {stats.map(({ id, label, percentage }) => (
           <li
             key={id}
             className={s.item}

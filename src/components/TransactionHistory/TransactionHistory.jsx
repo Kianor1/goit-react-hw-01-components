@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './TransactionHistory.module.css';
-import transactions from '../assets/transactions.json';
-const TransactionHistory = () => {
+
+const TransactionHistory = ({ items }) => {
   return (
     <table className={s.transaction_history}>
       <thead>
@@ -12,7 +12,7 @@ const TransactionHistory = () => {
         </tr>
       </thead>
       <tbody>
-        {transactions.map(({ id, type, amount, currency }, index) => (
+        {items.map(({ id, type, amount, currency }, index) => (
           <tr
             key={id}
             style={{ backgroundColor: index % 2 === 0 ? '#94eaff' : '#3effc5' }}
